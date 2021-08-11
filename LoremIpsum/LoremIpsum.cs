@@ -10,6 +10,7 @@ namespace ToolIca.LoremIpsum
         {
             Random de = new Random();
             return de.Next();
+            //modif de test
         }
         
         public static int GetInt(int min, int max)
