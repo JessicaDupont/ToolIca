@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ToolIca.Geographie
+namespace ToolIca.Enums
 {
     public enum Continents
 	{
         Afrique, 
-		AmériqueNord, 
-		AmériqueSud, 
+		AmeriqueNord, 
+		AmeriqueSud, 
 		Antarctique, 
 		Asie, 
 		Europe,
