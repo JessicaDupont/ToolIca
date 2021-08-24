@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ToolIca.Forms;
 using ToolIca.Models.Bases;
 
 namespace ToolIca.DataBases.Repositories
@@ -12,7 +11,7 @@ namespace ToolIca.DataBases.Repositories
         IRepositoryUpdate<TModel, Tid>,
         IRepositoryDelete<TModel, Tid>,
         IRepositorySearch<TModel, Tid>
-        where TModel : IModel
+        where TModel : IModelBase
     {
     }
     public interface IRepository<TModel, TForm, Tid> :
@@ -21,8 +20,8 @@ namespace ToolIca.DataBases.Repositories
         IRepositoryUpdate<TModel, TForm, Tid>,
         IRepositoryDelete<TModel, Tid>,
         IRepositorySearch<TModel, Tid>
-        where TModel : IModel
-        where TForm : IForm
+        where TModel : IModelBase
+        where TForm : IFormBase
     {
     }
 }

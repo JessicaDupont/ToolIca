@@ -2,25 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 using ToolIca.DataBases.EntityFramework.Bases;
-using ToolIca.Forms;
 using ToolIca.Models.Bases;
 
-namespace ToolIca.DataBases.Mapping
+namespace ToolIca.DataBases.EntityFramework.Mapping
 {
-    //pour ADO
-
-    //pour Entity Framework
     public interface IMapping<TEntity, TModel>
-        where TEntity : IEntity
-        where TModel : IModel
+        where TEntity : IEntityBase
+        where TModel : IModelBase
     {
         public TEntity Mapping(TModel model);
         public TModel Mapping(TEntity entity);
     }
     public interface IMapping<TEntity, TModel, TForm>
-        where TEntity : IEntity
-        where TModel : IModel
-        where TForm : IForm
+        where TEntity : IEntityBase
+        where TModel : IModelBase
+        where TForm : IFormBase
     {
         public TEntity Mapping(TForm form);
         //public TEntity Mapping(TModel model);

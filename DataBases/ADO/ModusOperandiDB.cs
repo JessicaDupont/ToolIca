@@ -13,7 +13,7 @@ namespace ToolIca.DataBases.ADO
         /// <summary>
         /// ajouter les dossiers suivants : 
         /// - Tables
-        /// - PostDeployment (contiendra 1 seul fichier)
+        /// - Scripts (dont PostDeployment = 1 fichier)
         /// - Views
         /// - StoredProcedures
         /// - ...

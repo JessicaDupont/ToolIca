@@ -15,6 +15,12 @@ namespace ToolIca.DataBases.ADO.Bases
 
         public bool IsStoreProcedure { get; }
 
+        public Command()
+        {
+            IsStoreProcedure = false;
+            Parameters = new Dictionary<string, object>();
+        }
+
         public Command(string commandText, bool isStoreProcedure)
         {
             CommandText = commandText;
@@ -26,5 +32,6 @@ namespace ToolIca.DataBases.ADO.Bases
         {
             Parameters.Add(parameterName, value);
         }
+
     }
 }

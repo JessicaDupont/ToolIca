@@ -18,6 +18,11 @@ namespace ToolIca.DataBases.ADO.Bases
             _connString = connString;
         }
 
+        /// <summary>
+        /// à utilsier pour les INSERT
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns>le nombre de lignes affectées</returns>
         public int ExecuteNonQuery(Command command)
         {
             using (DbConnection conn = CreateConnection())

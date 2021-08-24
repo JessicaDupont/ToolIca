@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ToolIca.DataBases.EntityFramework.Bases
+namespace ToolIca.Models.Bases
 {
-    public interface IEntity
+    public interface IModelBase
     {
         public int Id { get; set; }
     }
