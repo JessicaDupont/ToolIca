@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ToolIca.DataBases.EntityFramework.Bases
 {
-    public interface IEntityBase
+    public interface IEntityIdBase
     {
         public int Id { get; set; }
     }
