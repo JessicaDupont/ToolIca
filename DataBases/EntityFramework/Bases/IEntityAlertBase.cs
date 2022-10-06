@@ -15,5 +15,6 @@ namespace ToolIca.DataBases.EntityFramework.Bases
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime LastAlert { get; set; }
         public int NbAlert { get; set; }
+        public string AlertComment { get; set; }
     }
 }
